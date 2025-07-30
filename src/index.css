@@ -2,39 +2,65 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
-*/
+/* Donation Platform Design System - Trust, Transparency, Modern */
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    --background: 248 100% 99%;
+    --foreground: 215 25% 15%;
 
     --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card-foreground: 215 25% 15%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover-foreground: 215 25% 15%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    /* Trust-focused primary colors - Deep blue for reliability */
+    --primary: 215 85% 35%;
+    --primary-foreground: 0 0% 100%;
+    --primary-hover: 215 85% 30%;
+    --primary-light: 215 85% 95%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    /* Success green for donations and verified status */
+    --success: 145 70% 40%;
+    --success-foreground: 0 0% 100%;
+    --success-light: 145 70% 95%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    /* Secondary - Soft blue-grey */
+    --secondary: 215 20% 95%;
+    --secondary-foreground: 215 25% 25%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --muted: 215 15% 96%;
+    --muted-foreground: 215 15% 45%;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --accent: 215 85% 92%;
+    --accent-foreground: 215 85% 35%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    /* Warning for pending states */
+    --warning: 45 95% 50%;
+    --warning-foreground: 45 95% 10%;
+    --warning-light: 45 95% 95%;
+
+    --destructive: 0 75% 55%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 215 15% 90%;
+    --input: 215 15% 92%;
+    --ring: 215 85% 35%;
+
+    /* Trust gradients */
+    --gradient-trust: linear-gradient(135deg, hsl(215 85% 35%), hsl(195 85% 45%));
+    --gradient-success: linear-gradient(135deg, hsl(145 70% 40%), hsl(165 70% 50%));
+    --gradient-hero: linear-gradient(135deg, hsl(215 85% 95%), hsl(195 85% 98%));
+    
+    /* Shadows for trust and depth */
+    --shadow-trust: 0 10px 30px -10px hsl(215 85% 35% / 0.2);
+    --shadow-soft: 0 4px 12px -2px hsl(215 15% 25% / 0.08);
+    --shadow-glow: 0 0 20px hsl(215 85% 35% / 0.15);
+
+    /* Animation timings */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 
     --radius: 0.5rem;
 
