@@ -1,25 +1,31 @@
 import { Card, CardContent } from "@/components/ui/card";
-import { FileText, Search, Heart, Video, Shield, CheckCircle } from "lucide-react";
+import { FileText, Upload, Heart, Video, Shield, CheckCircle } from "lucide-react";
 
 const HowItWorks = () => {
   const steps = [
     {
-      icon: <Search className="w-8 h-8" />,
-      title: "Find Verified Requests",
-      description: "Browse through verified donation requests with full transparency and video introductions.",
-      features: ["Video verified recipients", "Document verification", "Community reviews"]
+      icon: <Upload className="w-8 h-8" />,
+      title: "Submit Request",
+      description: "Complete your request with personal details, documents, story, and self-introduction video.",
+      features: ["Personal & bank details", "Supporting documents", "Video introduction"]
+    },
+    {
+      icon: <Shield className="w-8 h-8" />,
+      title: "Verified by Admin",
+      description: "Our team reviews all documents, verifies authenticity, and approves legitimate requests.",
+      features: ["Document verification", "Admin review", "Fraud detection"]
     },
     {
       icon: <Heart className="w-8 h-8" />,
-      title: "Donate Securely",
-      description: "Choose your donation amount and payment method. Every transaction is secure and tracked.",
-      features: ["Multiple payment options", "Transaction tracking", "Instant receipts"]
+      title: "Donors Fund",
+      description: "Verified requests go live for donors to browse, review, and contribute securely.",
+      features: ["Public listing", "Secure payments", "Progress tracking"]
     },
     {
       icon: <CheckCircle className="w-8 h-8" />,
-      title: "See Real Impact",
-      description: "Receive updates on how your donation was used with photos and progress reports.",
-      features: ["Progress updates", "Impact photos", "Thank you messages"]
+      title: "Funds Released",
+      description: "After final verification checks, funds are released to recipients with full transparency.",
+      features: ["Final verification", "Fund release", "Impact updates"]
     }
   ];
 
@@ -50,12 +56,12 @@ const HowItWorks = () => {
             How It Works
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Three simple steps to make a verified, transparent donation that changes lives
+            Four transparent steps from request to verified fund release
           </p>
         </div>
 
         {/* Steps */}
-        <div className="grid md:grid-cols-3 gap-8 mb-20">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-20">
           {steps.map((step, index) => (
             <Card key={index} className="relative border-0 shadow-soft hover:shadow-trust transition-all duration-300 group">
               <CardContent className="p-8 text-center">
@@ -99,7 +105,7 @@ const HowItWorks = () => {
         <div className="bg-card rounded-2xl p-8 md:p-12 shadow-soft">
           <div className="text-center mb-8">
             <h3 className="text-2xl font-bold text-foreground mb-4">
-              Why Trust GiveTrue?
+              Why Trust CeylonTrust?
             </h3>
             <p className="text-muted-foreground">
               Our verification process ensures every donation reaches real people with genuine needs

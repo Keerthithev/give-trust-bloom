@@ -8,46 +8,46 @@ const FeaturedRequests = () => {
   const requests = [
     {
       id: 1,
-      name: "Sarah Chen",
-      location: "Portland, OR",
-      title: "Medical Treatment for Rare Condition",
-      description: "I'm seeking help for treatment of a rare neurological condition that isn't covered by insurance. Every donation brings me closer to getting the specialized care I need.",
+      name: "Kumari Perera",
+      location: "Colombo, Sri Lanka",
+      title: "Medical Treatment for Heart Surgery",
+      description: "I need urgent heart surgery that isn't fully covered by government healthcare. My family has exhausted our savings and we need community support to save my life.",
       image: "https://images.unsplash.com/photo-1494790108755-2616b612b742?w=400&h=300&fit=crop&crop=face",
       videoThumbnail: "https://images.unsplash.com/photo-1494790108755-2616b612b742?w=200&h=150&fit=crop&crop=face",
-      goal: 25000,
-      raised: 18750,
-      donors: 234,
-      daysLeft: 12,
+      goal: 850000,
+      raised: 620000,
+      donors: 184,
+      daysLeft: 8,
       verified: true,
       category: "Medical"
     },
     {
       id: 2,
-      name: "Miguel Rodriguez",
-      location: "Austin, TX",
-      title: "Small Business Recovery After Fire",
-      description: "Our family restaurant was damaged in a recent fire. We're working to rebuild and get back to serving our community. Any support helps us get back on our feet.",
+      name: "Sunil Fernando",
+      location: "Kandy, Sri Lanka",
+      title: "Flood Damage Recovery - Small Shop",
+      description: "Recent floods destroyed my small grocery shop that supports my family of five. I need help to rebuild and restock to get back on my feet and serve my community.",
       image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&h=300&fit=crop&crop=face",
       videoThumbnail: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=200&h=150&fit=crop&crop=face",
-      goal: 35000,
-      raised: 12500,
-      donors: 127,
-      daysLeft: 25,
+      goal: 450000,
+      raised: 180000,
+      donors: 92,
+      daysLeft: 19,
       verified: true,
       category: "Business"
     },
     {
       id: 3,
-      name: "Emma Thompson",
-      location: "Denver, CO",
-      title: "Educational Support for Single Mom",
-      description: "As a single mother pursuing nursing school, I need help with childcare costs and educational expenses. Your support helps me build a better future for my family.",
+      name: "Priya Silva",
+      location: "Galle, Sri Lanka",
+      title: "University Education Support",
+      description: "I scored high marks for university entrance but my family cannot afford the fees and accommodation costs. Please help me pursue my dream of becoming a teacher.",
       image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&h=300&fit=crop&crop=face",
       videoThumbnail: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=200&h=150&fit=crop&crop=face",
-      goal: 15000,
-      raised: 8900,
-      donors: 89,
-      daysLeft: 18,
+      goal: 320000,
+      raised: 195000,
+      donors: 67,
+      daysLeft: 12,
       verified: true,
       category: "Education"
     }
@@ -141,10 +141,10 @@ const FeaturedRequests = () => {
                 <div className="space-y-3 mb-6">
                   <div className="flex justify-between text-sm">
                     <span className="text-muted-foreground">
-                      ${request.raised.toLocaleString()} raised
+                      Rs. {request.raised.toLocaleString()} raised
                     </span>
                     <span className="font-medium text-foreground">
-                      ${request.goal.toLocaleString()} goal
+                      Rs. {request.goal.toLocaleString()} goal
                     </span>
                   </div>
                   <Progress 

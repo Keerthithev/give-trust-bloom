@@ -11,14 +11,15 @@ const Hero = () => {
           <div className="space-y-8 animate-fade-in">
             <div className="space-y-4">
               <h1 className="text-4xl md:text-6xl font-bold text-foreground leading-tight">
-                Transparent, Verified Donations.{" "}
+                Verified Donations.{" "}
                 <span className="bg-gradient-trust bg-clip-text text-transparent">
-                  Help Real People.
-                </span>
+                  Real Stories.
+                </span>{" "}
+                Trusted by Ceylon.
               </h1>
               <p className="text-xl text-muted-foreground max-w-lg">
-                Every donation is verified, tracked, and transparent. Connect directly with those in need 
-                and see exactly how your contribution makes a difference.
+                Connect verified Sri Lankan individuals in need with generous donors. Every donation is admin-verified, 
+                documented, and tracked with full transparency.
               </p>
             </div>
 
@@ -26,15 +27,15 @@ const Hero = () => {
             <div className="flex flex-wrap gap-6 text-sm">
               <div className="flex items-center space-x-2">
                 <CheckCircle className="w-5 h-5 text-success" />
-                <span className="text-muted-foreground">Video Verified</span>
+                <span className="text-muted-foreground">Admin Verified</span>
               </div>
               <div className="flex items-center space-x-2">
                 <Shield className="w-5 h-5 text-success" />
-                <span className="text-muted-foreground">Refund Guaranteed</span>
+                <span className="text-muted-foreground">Refund Before Release</span>
               </div>
               <div className="flex items-center space-x-2">
                 <Users className="w-5 h-5 text-success" />
-                <span className="text-muted-foreground">Community Verified</span>
+                <span className="text-muted-foreground">Video Verified</span>
               </div>
             </div>
 
@@ -59,15 +60,15 @@ const Hero = () => {
             {/* Stats */}
             <div className="grid grid-cols-3 gap-8 pt-8 border-t border-border">
               <div className="text-center">
-                <div className="text-2xl font-bold text-primary">$2.4M+</div>
+                <div className="text-2xl font-bold text-primary">Rs. 18M+</div>
                 <div className="text-sm text-muted-foreground">Donated</div>
               </div>
               <div className="text-center">
-                <div className="text-2xl font-bold text-primary">12,000+</div>
+                <div className="text-2xl font-bold text-primary">8,500+</div>
                 <div className="text-sm text-muted-foreground">Lives Helped</div>
               </div>
               <div className="text-center">
-                <div className="text-2xl font-bold text-primary">99.8%</div>
+                <div className="text-2xl font-bold text-primary">99.9%</div>
                 <div className="text-sm text-muted-foreground">Verified</div>
               </div>
             </div>
